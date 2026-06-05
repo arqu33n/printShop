@@ -1,0 +1,105 @@
+.order-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #eeeff4;
+  padding: 20px;
+  width: max-content;
+  border-radius: 8px;
+}
+
+.order-detail__header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  margin: -20px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 7px 7px 1px rgba(34, 60, 80, 0.2);
+}
+
+.order-detail__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.order-detail__grid {
+  display: flex;
+  gap: 20px;
+}
+
+.order-detail__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  height: max-content;
+  box-shadow: 0 0 7px 1px rgba(34, 60, 80, 0.2);
+}
+
+.section-header {
+  padding: 5px;
+  border-bottom: #919090 solid 1px;
+}
+
+.info-card {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.order-items__table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.order-items__table th {
+    text-align: left;
+    padding: 12px 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.order-items__table td {
+    text-align: center;
+    padding: 12px 8px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.order-detail__footer {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: max-content;
+  height: max-content;
+}
+
+.btn-edit {
+  background-color: #1e7cbf;
+  font-size: 20px;
+}
+
+.btn-delete {
+  background-color: #ef4444;
+  font-size: 16px;
+}

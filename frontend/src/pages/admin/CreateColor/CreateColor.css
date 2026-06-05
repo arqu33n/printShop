@@ -1,0 +1,148 @@
+.create-color {
+    padding: 20px;
+}
+
+.create-color__container {
+    margin-top: 20px;
+}
+
+.create-color__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.create-color__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.create-color__form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.color-preview {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-top: 8px;
+}
+
+.create-color__exists-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+.all-colors__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+    padding-right: 10px;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.all-colors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.all-colors__circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.all-colors__name {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.all-colors__hex {
+    font-size: 12px;
+    color: #666;
+    font-family: monospace;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.form__footer {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.--primary {
+    background: #007bff;
+    color: white;
+}
+
+.--primary:hover:not(:disabled) {
+    background: #0056b3;
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.alert {
+    padding: 16px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.--success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.--error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+    .create-color__row {
+        grid-template-columns: 1fr;
+    }
+}

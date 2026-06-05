@@ -1,0 +1,72 @@
+.create-product {
+  padding-bottom: 200px;
+}
+.create-product__title {
+  font-size: 24px;
+}
+.create-product__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0px;
+  gap: 24px;
+}
+.create-product__row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.create-product__form {
+  flex: 2;
+}
+.create-product__upload {
+  flex: 1;
+}
+.form__group {
+  margin-bottom: 12px;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form__footer {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ecf0f1;
+}
+.btn {
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #30a3db;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 200px;
+  text-align: center;
+}
+
+.btn:hover:not(:disabled) {
+  background: #1c83b6;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+.success-message {
+  color: green;
+  font-size: 14px;
+}

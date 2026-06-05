@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #85b2c5;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.footer__vk {
+    display: flex;
+    align-items: center;
+}
+
+.footer__vk img {
+    width: 100px;
+    height: 100px;
+}
+
+.footer__vk a {
+    color: black;
+    text-decoration: none;
+}

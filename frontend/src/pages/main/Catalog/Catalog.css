@@ -1,0 +1,120 @@
+.catalog {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.catalog__container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    'title title'
+    'aside content';
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.catalog__breadcrumbs {
+  grid-area: breadcrumbs;
+  height: auto;
+  width: 100%;
+}
+.catalog__title {
+  grid-area: title;
+  height: auto;
+  width: 100%;
+}
+.catalog__aside {
+  grid-area: aside;
+  height: 100%;
+  width: 300px;
+  min-width: 300px;
+}
+.catalog__content {
+  grid-area: content;
+  height: auto;
+  width: 100%;
+  min-width: 0;
+}
+.catalog__info {
+  margin-bottom: 20px;
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__stats {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.catalog__active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.active-filter {
+  display: inline-flex;
+  align-items: center;
+  background: #e3f2fd;
+  border: 1px solid #bbdefb;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 14px;
+  color: #1976d2;
+}
+
+.active-filter button {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-filter button:hover {
+  color: #0d47a1;
+}
+
+.catalog__empty {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+.catalog__empty p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.catalog__reset-all {
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.catalog__reset-all:hover {
+  background: #3a5ce5;
+}

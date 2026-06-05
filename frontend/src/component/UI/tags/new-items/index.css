@@ -1,0 +1,9 @@
+.new-items-tag {
+    width: max-content;
+    height: max-content;
+    background-color: #f1e965;
+    padding: 6px 8px;
+    font-size: 12px;
+    border-radius: 30px;
+    text-align: center;
+}

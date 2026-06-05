@@ -1,0 +1,18 @@
+@import '../Products/Products.css';
+
+.orders-grid .admin-grid__header {
+  grid-template-columns: 100px 2fr 1.5fr 2fr 120px 120px 80px !important;
+}
+
+.orders-grid .admin-grid__row {
+  grid-template-columns: 100px 2fr 1.5fr 2fr 120px 120px 80px !important;
+}
+
+.orders-grid__cell.--id {
+  color: #30a3db;
+  justify-content: center;
+}
+
+.orders-grid__cell.--actions {
+  justify-content: center;
+}

@@ -1,0 +1,21 @@
+.admin-header {
+  display: flex;
+  padding: 32px 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.admin-header__auth {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.admin-header__auth-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #f6f6f6;
+  padding: 6px;
+  border-radius: 9px;
+}
+.admin-header__auth-icon.--logout {
+  cursor: pointer;
+}

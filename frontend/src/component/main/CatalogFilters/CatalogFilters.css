@@ -1,0 +1,138 @@
+.catalog-filters {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.filters-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.filters-reset {
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filters-reset:hover {
+  border-color: #999;
+  color: #333;
+}
+
+.filter-group {
+  margin-bottom: 25px;
+}
+
+.filter-group__title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 12px 0;
+}
+
+.sort-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sort-button {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.sort-button:hover {
+  background: #eee;
+  border-color: #ccc;
+}
+
+.sort-button--active {
+  background: #30a3db;
+  border-color: #30a3db;
+  color: white;
+}
+
+.sort-button--active:hover {
+  background: #30a3db;
+  border-color: #30a3db;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  user-select: none;
+}
+
+.filter-checkbox__input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.filter-checkbox__custom {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.filter-checkbox__input:checked + .filter-checkbox__custom {
+  background: #4a6cf7;
+  border-color: #4a6cf7;
+}
+
+.filter-checkbox__input:checked + .filter-checkbox__custom::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.filter-checkbox__text {
+  flex: 1;
+}
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 8px;
+}

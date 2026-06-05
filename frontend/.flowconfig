@@ -1,0 +1,24 @@
+[ignore]
+.*/node_modules/.*
+.*/public/.*
+.*/dist/.*
+
+[include]
+
+[libs]
+
+[options]
+all=true
+emoji=true
+module.name_mapper='^\(@css\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/css/\1'
+module.name_mapper='^\(@application\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/application/\1'
+module.name_mapper='^\(@layout\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/layout/\1'
+module.name_mapper='^\(@component\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/component/\1'
+module.name_mapper='^\(@const\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/const/\1'
+module.name_mapper='^\(@lib\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/lib/\1'
+module.name_mapper='^\(@model\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/model/\1'
+module.name_mapper='^\(@provider\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/provider/\1'
+module.name_mapper='^\(@service\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/provider/service/\1'
+module.name_mapper='^\(@pull\/\(.*\)\)$' -> '<PROJECT_ROOT>/src/provider/pull/\1'
+
+[strict]

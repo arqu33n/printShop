@@ -1,0 +1,26 @@
+.base-textarea__field {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.2s;
+  font-family: inherit;
+  resize: vertical;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.base-textarea__field:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.base-textarea__field::placeholder {
+  color: #999;
+}
+.base-textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

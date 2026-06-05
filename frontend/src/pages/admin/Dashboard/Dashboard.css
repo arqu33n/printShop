@@ -1,0 +1,133 @@
+.admin-dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  align-items: start;
+}
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 16px;
+  height: fit-content;
+}
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  height: 150px;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  text-decoration: none;
+  color: #000000;
+}
+.dashboard-card.--total-revenue {
+  background-color: #30a3db;
+  border: 1px solid #1a71f6;
+  color: #ffffff;
+  font-weight: 600;
+}
+.dashboard-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #454545;
+}
+.dashboard-card__value {
+  font-size: 24px;
+}
+.dashboard-card.--total-revenue .dashboard-card__title {
+  color: #ffffff;
+}
+.dashboard-panel__item {
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  padding: 16px;
+  height: 316px;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-card.--avg .dashboard-card__value {
+  color: #04910c;
+}
+.dashboard-panel__item-header {
+  display: flex;
+}
+.dashboard-panel__item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-panel__item-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  margin-left: auto;
+}
+.dashboard-panel__item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #454545;
+}
+.dashboard-panel__item-image {
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+.dashboard-panel__item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  margin-top: auto;
+}
+.dashboard-panel__item-count {
+  color: #30a3db;
+  font-size: 24px;
+}
+.dashboard-panel__item-name.skeleton {
+  width: 200px;
+  margin-bottom: 8px;
+  height: 20px;
+}
+
+.dashboard-panel__item-count.skeleton {
+  width: 100px;
+  height: 20px;
+}
+
+.skeleton {
+  position: relative;
+  background: #f0f0f0;
+  border-radius: 4px;
+  color: transparent !important;
+  pointer-events: none;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

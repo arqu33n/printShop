@@ -1,0 +1,14 @@
+.breadcrumbs__list {
+  display: flex;
+  font-size: 18px;
+}
+.breadcrumbs__separator {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.breadcrumbs__link {
+  text-decoration: none;
+}
+.breadcrumbs__current {
+  color: #30a3db;
+}

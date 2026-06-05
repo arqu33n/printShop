@@ -1,0 +1,10 @@
+.all-tag {
+    width: max-content;
+    height: max-content;
+    background-color: #4848f1;
+    padding: 6px 8px;
+    font-size: 12px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    text-align: center;
+}

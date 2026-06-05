@@ -1,0 +1,280 @@
+.checkout {
+  padding: 32px 24px;
+}
+.checkout-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: calc(100vh - 100px);
+}
+.checkout__card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+}
+
+.checkout__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 32px 0;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.product {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  border: 1px solid #eee;
+}
+
+.product__image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.product__info {
+  flex: 1;
+}
+
+.product__name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.product__price {
+  font-size: 24px;
+  font-weight: 700;
+  color: #30a3db;
+  margin: 0 0 20px 0;
+}
+
+.product__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.product__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.product__meta strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.form {
+  margin-top: 8px;
+}
+
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form__group {
+  margin-bottom: 0;
+}
+
+.form__group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form__group input,
+.form__group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.form__group input:focus,
+.form__group textarea:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+  color: #999;
+}
+
+.form__group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.total {
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.total strong {
+  font-size: 24px;
+  font-weight: 700;
+  color: #30a3db;
+}
+.btn {
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #30a3db;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 200px;
+  text-align: center;
+}
+
+.btn:hover:not(:disabled) {
+  background: #1c83b6;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form__error {
+  margin-top: 20px;
+  padding: 14px 16px;
+  background: #fee;
+  border: 2px solid #f66;
+  border-radius: 10px;
+  color: #c00;
+  font-size: 14px;
+  text-align: center;
+}
+.success {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.success-content {
+  margin-top: 32px;
+  padding: 24px;
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  color: #1b5e20;
+  font-size: 16px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+.success a {
+  text-decoration: none;
+}
+.success strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-left: 6px;
+}
+
+.checkout :deep(.breadcrumbs) {
+  margin-bottom: 28px;
+}
+
+.checkout :deep(.breadcrumbs__list) {
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product__quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-btn:hover {
+  background: #e5e5e5;
+}
+
+.quantity-input {
+  width: 60px;
+  height: 32px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.error-text {
+  font-size: 12px;
+  color: red;
+}
